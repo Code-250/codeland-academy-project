@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"  xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Template"
+    jcr:title="Page Template"
+    componentGroup="Academy Richard Unicredit Template"
+    ranking="{Long}100"
+    allowedPaths="[/content(/.*)?]"
+    allowedParent="[/content/academy-munyemana-unicredit/us/en(/.*)?]"
+    >
+    <jcr:content
+      jcr:primaryType="cq:PageContent"
+      sling:resourceType="/apps/academy-munyemana-unicredit/components/structure/page"
+    /> 
+</jcr:root>

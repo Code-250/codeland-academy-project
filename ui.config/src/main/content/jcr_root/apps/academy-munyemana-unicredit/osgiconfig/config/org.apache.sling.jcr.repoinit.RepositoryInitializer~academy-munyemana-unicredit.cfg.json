@@ -1,0 +1,10 @@
+{
+    "scripts": [
+        "create path (sling:OrderedFolder) /content/dam/academy-munyemana-unicredit",
+        "create path (nt:unstructured) /content/dam/academy-munyemana-unicredit/jcr:content",
+        "set properties on /content/dam/academy-munyemana-unicredit/jcr:content",
+        "set cq:conf{String} to /conf/academy-munyemana-unicredit",
+        "set jcr:title{String} to \"Academy Munyemana Unicredit Site\"",
+        "end"
+    ]
+}

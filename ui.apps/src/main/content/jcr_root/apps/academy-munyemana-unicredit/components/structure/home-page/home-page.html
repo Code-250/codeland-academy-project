@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electro Unicredit Project</title>
+  <sly data-sly-use.clientlib="granite/sightly/templates/clientlib.html" data-sly-call="${clientlib.css @ categories=['academy-munyemana-unicredit.official']}"/>
+</head>
+<body>
+  <sly
+    data-sly-resource="${'/content/academy-munyemana-unicredit/us/en/unicredit-home-page/jcr:content/header' @resourceType='academy-munyemana-unicredit/components/header'}"
+  ></sly>
+  <sly data-sly-include="/libs/wcm/core/components/init/init.jsp"/>
+<div data-sly-resource="${'parsys' @ resourceType='wcm/foundation/components/parsys'}"></div>
+  <div id="academy-hero-slider" data-sly-resource="${'footer' @resourceType='academy-munyemana-unicredit/components/footer'}"></div>
+
+  <sly data-sly-use.clientlib="granite/sightly/templates/clientlib.html" data-sly-call="${clientlib.js @ categories=['academy-munyemana-unicredit.official']}"/>
+</body>
+</html>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/academy-munyemana-unicredit/clientlibs"/>
+    <filter root="/apps/academy-munyemana-unicredit/components"/>
+    <filter root="/apps/academy-munyemana-unicredit/templates"/>
+    <filter root="/apps/academy-munyemana-unicredit/i18n"/>
+</workspaceFilter>

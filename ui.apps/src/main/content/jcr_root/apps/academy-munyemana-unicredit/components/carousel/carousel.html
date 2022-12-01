@@ -1,0 +1,15 @@
+<sly data-sly-use.tabs="it.codeland.academy.core.models.AutopaceTabs" />
+<sly data-sly-test="${wcmmode.edit}" data-emptytext="Autopace Tabs" class="cq-placeholder" />
+
+<h2>Tabs</h2>
+<div class="tab">
+	<sly data-sly-list.item="${tabs.tabItems}">
+	<button class="tablinks" onclick="openCity(event, '${item.title @ context='html'}')">${item.title}</button>
+	</sly>
+</div>
+
+<sly data-sly-list.item="${tabs.tabItems}">
+<div id="${item.title}" class="tabcontent">
+	<sly data-sly-resource="${item.tabId @ resourceType='wcm/foundation/components/responsivegrid'}"/>
+</div>
+</sly>

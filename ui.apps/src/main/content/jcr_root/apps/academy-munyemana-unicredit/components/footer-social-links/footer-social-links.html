@@ -1,0 +1,9 @@
+<sly data-sly-use.footer="it.codeland.academy.core.models.FooterLinks">
+  <div class="footer__utils" data-sly-test="${!footer.footerLinks}">
+    <a href="#" data-sly-test="${!footer.footerLinks}">click here to add Footer Socials Links</a>
+  </div>
+
+  <div class="footer__utils" data-sly-list.item="${footer.footerLinks}">
+    <a href="${item.link}.html" target="${item.target}">${item.label}</a>
+  </div>
+</sly>

@@ -1,0 +1,9 @@
+<sly data-sly-use.footer="it.codeland.academy.core.models.FooterLinks">
+  <div class="footer__lastLink" data-sly-test="${!footer.footerLinks}">
+    <div class="footer__link" data-sly-test="${!footer.footerLinks}">Click here to add Footer Secondary level Links</div>
+  </div>
+
+  <div class="footer__lastLink" data-sly-list.item="${footer.footerLinks}">
+    <a href="${item.link}.html" class="footer__link" target="${item.target}">${item.label}</a>
+  </div>
+</sly>

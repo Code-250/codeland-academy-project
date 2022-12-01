@@ -1,0 +1,205 @@
+<!--/* <h1 style="text-align: center;" data-sly-use.model="it.codeland.academy.core.models.ArticleModel">${model.title || "No title"}</h1>
+<sly data-sly-resource="${'parsys' @ resourceType='wcm/foundation/components/parsys'}"/> */-->
+<!DOCTYPE html>
+<html class="no-touch">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta name="robots" content="FOLLOW, INDEX" />
+
+    <!-- Page title -->
+    <title>UniCreditGroup - Article</title>
+    <!-- Social Media Tags -->
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="" />
+    <meta name="twitter:title" content="IT" />
+    <meta name="twitter:creator" content="" />
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="IT" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://www.unicreditgroup.eu/it.html" />
+    <meta property="og:site_name" content="UnicreditGroup.eu" />
+    <meta
+      property="article:modified_time"
+      content="2020-11-27T12:48:15.710+01:00"
+    />
+    <meta property="article:section" content="Banking" />
+     <sly data-sly-use.clientlib="granite/sightly/templates/clientlib.html" data-sly-call="${clientlib.css @ categories=['academy-munyemana-unicredit.official']}"/>
+
+    <!-- ******************* END NEW LIBRARY CSS - NEW COMPONENTS ******************* -->
+  </head>
+
+  <body>
+    <!-- ******************* START NEW LIBRARY JS - NEW COMPONENTS ******************* -->
+    <sly data-sly-use.clientlib="granite/sightly/templates/clientlib.html" data-sly-call="${clientlib.js @ categories=['academy-munyemana-unicredit.official']}"/>
+    <!-- ******************* END NEW LIBRARY JS - NEW COMPONENTS ******************* -->
+
+    <!-- ******************* START NEW HEADER COMPONENT ******************* -->
+   <sly
+    data-sly-resource="${'/content/academy-munyemana-unicredit/us/en/unicredit-home-page/jcr:content/header' @resourceType='academy-munyemana-unicredit/components/header', wcmmode='disabled'}"
+  ></sly>
+
+    <!-- ******************* END NEW HEADER COMPONENT ******************* -->
+
+    <main>
+    <!-- ******************* START HERO BANNER ******************* -->
+    <div class="heroBanner-article">
+      <div class="heroBanner__main container-fixed">
+        <div
+          class="heroBanner__wrapper gradient gradient__hero"
+          data-bg="${properties.image}"
+          data-bg-mobile="${properties.image}"
+        >
+          <div class="hero__mask text--subtitle" data-mask="dark">
+            <img class="mask__logo" src="/apps/academy-munyemana-unicredit/clientlibs/clientlib-official/images/whiteLogo.png" alt="logo__mask" />
+          </div>
+          <div class="hero container">
+            <div class="hero__info">
+              <p class="hero__title text--headline">${properties.jcr:title}</p>
+              <div class="hero__lables">
+                <span class="hero__lable text--labelBg bg--lipstick"
+                  >OUR PEOPLE</span
+                >
+                <div class="hero__hashtag hashTag">${properties.cq:tags}</div>
+              </div>
+              <p class="hero__date text--subtitle">${'EEEE d MMM y' @ format=properties.date, timezone='UTC',
+                      locale='en_US', i18n}</p>
+            </div>
+          </div>
+        </div>
+        <div class="share-menu">
+          <div class="share__wrapper container">
+            <div class="share-cta">
+              <div class="share__button icon icon-share"></div>
+              <span class="text--body">SHARE</span>
+              <div class="share-list">
+                <div class="share__item share__twitter">
+                  <div class="icon icon-twitter"></div>
+                  <a class="text--label">TWITTER</a>
+                </div>
+                <div class="share__item share__linkedin">
+                  <div class="icon icon-linkedin"></div>
+                  <a class="text--label">LINKEDIN</a>
+                </div>
+                <div class="share__item share__mail">
+                  <div class="icon icon-email"></div>
+                  <a class="text--label">MAIL</a>
+                </div>
+                <div class="share__item share__copylink">
+                  <div class="icon icon-link"></div>
+                  <a class="text--label">COPYLINK</a>
+                </div>
+                <div class="line"></div>
+                <div class="share__item share__print">
+                  <div class="icon icon-print"></div>
+                  <a class="text--label">PRINT</a>
+                </div>
+                <div class="share__close icon icon-close"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ******************* END HERO BANNER ******************* -->
+    <!-- ******************* START BREADCRUMB ******************* -->
+    <div class="breadCrumb">
+      <div class="container container--width">
+        <div class="breadCrumb__desktop">
+          <ul>
+            <li>
+              <a href="#">OneUnicredit</a>
+            </li>
+            <li>
+              <a href="#">Our people</a>
+            </li>
+            <li class="breadCrumbItem__last">
+              <span>Orange the World</span>
+            </li>
+          </ul>
+        </div>
+        <div class="breadCrumb__mobile">
+          <div class="breadCrumb__button">
+            <span class="icon-down"></span>
+            <a href="#" class="text--label">BACK to OUR PEOPLE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ******************* END BREADCRUMB ******************* -->
+    <!-- ******************* START ABSTRACT TIME ******************* -->
+    <div class="abstractTime">
+      <div class="container">
+        <div class="abstractTime__abstract text--headline">
+          UniCredit supports International Day for the Elimination of Violence
+          against Women
+        </div>
+        <div class="abstractTime__time">
+          <span class="icon-time"></span>
+          <span class="abstractTime__timeValue text--label">08:04 min</span>
+        </div>
+      </div>
+    </div>
+    <!-- ******************* END ABSTRACT TIME ******************* -->
+    <!-- ******************* START TEXT AND QUOTATION ******************* -->
+    <div class="textAndQuotation" data-quotation="true" data-capital="true">
+      <div class="container">
+        <div class="textAndQuotation__capitalTextSection">
+          <div class="textAndQuotation__capitalTextContainer">
+            <p>
+              Games <b>are</b> a great way for your children to learn how to
+              deal with money. When they are young they can pretend they work
+              in a shop and use a fake cash register; as they get a bit older
+              they can pretend to work in a bank.
+            </p>
+          </div>
+        </div>
+        <div class="textAndQuotation__textQuotationSection">
+          <div class="textQuotationSection__quotation">
+            <blockquote>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam quis nostrud
+              </p>
+            </blockquote>
+            <div class="textQuotationSection__signature">Nome Cognome</div>
+          </div>
+          <div class="textQuotationSection__lowerPartParagraph">
+            <p>
+              sed do eiusmod tempor incididunt ut labore Nemo enim ipsam
+              voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed
+              quia consequuntur magni dolores eos qui ratione voluptatem sequi
+              nesciunt. Sed ut perspiciatis unde omnis iste natus error sit
+              voluptatem accusantium doloremque laudantium, totam rem aperiam,
+              eaque ipsa quae ab illo inventore veritatis et quasi architecto
+              beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+              quia voluptas sit aspernatur aut odit aut fugit, sed quia
+              consequuntur magni dolores eos qui ratione voluptatem sequi
+              nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
+              sit amet, consectetur, adipisci velit, sed quia non numquam eius
+              modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+              voluptatem: Ut enim ad minima veniam, quis nostrum
+              exercitationem Quis autem vel eum iure reprehenderit qui in ea
+              voluptate
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ******************* END TEXT AND QUOTATION ******************* -->
+  </main>
+
+    <!-- ******************* START FOOTER COMPONENT ******************* -->
+    <sly
+    data-sly-resource="${'/content/academy-munyemana-unicredit/us/en/unicredit-home-page/jcr:content/footer' @resourceType='academy-munyemana-unicredit/components/footer', wcmmode='disabled'}"
+  ></sly>
+
+    <!-- ******************* END FOOTER COMPONENT ******************* -->
+  </body>
+</html>
