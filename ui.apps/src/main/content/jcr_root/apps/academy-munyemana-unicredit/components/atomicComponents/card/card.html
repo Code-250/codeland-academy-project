@@ -1,0 +1,22 @@
+<div class="cardAcademy">
+    <div data-sly-test="${!properties.backgroundType}" style="color:gray; text-align:center">[ Click to select card type ]</div>
+
+
+    <div data-sly-test="${properties.backgroundType =='image'}" class="cardBg">
+        <sly data-sly-resource="${'backgroundImage' @resourceType='/apps/academy-munyemana-unicredit/components/atomicComponents/imageBg'}" ></sly>
+    </div>
+    <div data-sly-test="${properties.backgroundType =='video'}" class="cardBg">
+        <sly data-sly-resource="${'backgroundVideo' @resourceType='/apps/academy-munyemana-unicredit/components/atomicComponents/videoBg'}" ></sly>
+    </div>
+
+    <div>
+        <sly data-sly-resource="${'title' @resourceType='/apps/academy-munyemana-unicredit/components/atomicComponents/title'}" ></sly>
+    </div>
+    <div>
+        <sly data-sly-resource="${'paragraph' @resourceType='/apps/academy-munyemana-unicredit/components/atomicComponents/paragraph'}" ></sly>
+    </div>
+    <div class="btnWrapper">
+        <sly data-sly-resource="${'button' @resourceType='/apps/academy-munyemana-unicredit/components/atomicComponents/button'}" ></sly>
+    </div>
+
+</div>

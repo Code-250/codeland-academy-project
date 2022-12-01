@@ -1,0 +1,65 @@
+.cardsContainer{
+    min-height: 450px;
+    padding: 20px;
+    padding: 1px;
+    /* max-width: 1000px; */
+    margin: 0 auto;
+    /* display: flex;
+    justify-content: space-between; */
+    align-items: center;
+}
+
+.cardAcademy{
+    border: 3px solid rgb(255, 255, 255);
+    width: 400px;
+    height: 450px;
+    overflow: hidden;
+    position:relative;
+    margin: 1rem 0;
+}
+.cardBg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.atomsTitle{
+    z-index: 1;
+    /* padding: 2rem 0; */
+    text-align: center;
+    width: 100%;
+    position:absolute;
+    top: 20%;
+}
+.atomsParagraph{
+    z-index: 1;
+    font-size: 14px;
+    text-align: center;
+    position:absolute;
+    top: 40%;
+    padding: 0 1rem;
+}
+.btnWrapper{
+    display: flex;
+    justify-content: center;
+}
+.atomsBtn{
+    margin: 0 auto;
+    border: 1px solid white;
+    z-index: 10;
+    font-size: 16px;
+    font-weight: bold;
+    background: transparent;
+    padding: 10px 15px;
+    color: white;
+    cursor: pointer;
+    position:absolute;
+    bottom: 10%;
+}
+.atomsBtn:hover{
+    opacity: 75%;
+}
+.img{
+    width: 100%;
+    height: 100%;
+}

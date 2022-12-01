@@ -150,10 +150,6 @@ public class JobExecute implements JobExecutor {
                 if (row.length == 5) {
                     // Extract data from CSV
                     articleData.pageName = row[FIELD_INDEX_PAGE_NAME];
-                    // Check if page is already existing
-                    // String name = "/content/ucs-exercise-issa/magazine/" + articleData.pageName +
-                    // "/";
-                    // Page x = pageManager.getPage(name);
                     if (pageManager
                             .getPage("/content/academy-munyemana-unicredit/us/en/unicredit-home-page/magazine/"
                                     + articleData.pageName + "/") == null) {
