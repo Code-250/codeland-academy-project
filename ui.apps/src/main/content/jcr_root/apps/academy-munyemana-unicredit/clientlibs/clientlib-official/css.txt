@@ -6,6 +6,7 @@ css/main__welcome.css
 css/heroBanner__welcome.css
 css/relatedHashtag.css
 css/main__accademy.css
+css/card.css
 
 less/common.css
 less/common.less

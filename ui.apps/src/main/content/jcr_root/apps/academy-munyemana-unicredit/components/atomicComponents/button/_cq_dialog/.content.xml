@@ -11,12 +11,12 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="granite/ui/components/coral/foundation/container">
                 <items jcr:primaryType="nt:unstructured">
-                    <text
+                    <!-- <text
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                         fieldLabel="Button Text"
                         emptyText="Enter button text "
-                        name="./text"/>
+                        name="./text"/> -->
 
                     <type
                             jcr:primaryType="nt:unstructured"
