@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="custom cq Dialog"
+    xtype="panel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1 jcr:primaryType="cq:WidgetCollection">
+                <customText
+                    jcr:primaryType="cq:Widget"
+                    description="this is a custom text component"
+                    label="display Text"
+                    name="./customText"
+                    xtype="textfiield"/>
+                <windowOptions
+                    jcr:primaryType="cq:Widget"
+                    label="open in new window option"
+                    name="./select"
+                    xtype="checkbox"/>
+                <link
+                    jcr:primaryType="cq:Widget"
+                    label="Link"
+                    name="./link"
+                    xtype="textfiield"/>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>

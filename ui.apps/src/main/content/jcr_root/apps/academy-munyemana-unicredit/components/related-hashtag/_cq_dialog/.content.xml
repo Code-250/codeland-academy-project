@@ -1,37 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
-    xmlns:cq="http://www.day.com/jcr/cq/1.0"
-    xmlns:jcr="http://www.jcp.org/jcr/1.0"
-    xmlns:nt="http://www.jcp.org/jcr/nt/1.0" jcr:primaryType="nt:unstructured" jcr:title="Related Hashtags Component" sling:resourceType="cq/gui/components/authoring/dialog">
-    <content jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/container">
-        <layout jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/layouts/tabs" type="nav"/>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Related Hashtags Component"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+            type="nav"/>
         <items jcr:primaryType="nt:unstructured">
-            <textTab jcr:primaryType="nt:unstructured" jcr:title="General" sling:resourceType="granite/ui/components/foundation/section">
-                <layout jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns" margin="{Boolean}false"/>
+            <textTab
+                jcr:primaryType="nt:unstructured"
+                jcr:title="General"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                    margin="{Boolean}false"/>
                 <items jcr:primaryType="nt:unstructured">
-                    <column jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/container">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
                         <items jcr:primaryType="nt:unstructured">
-                            <orderBy jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/select" fieldLabel="orderBy" name="./orderBy">
+                            <orderBy
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                fieldLabel="orderBy"
+                                name="./orderBy">
                                 <items jcr:primaryType="nt:unstructured">
-                                    <date jcr:primaryType="nt:unstructured" text="date" value="date"/>
+                                    <date
+                                        jcr:primaryType="nt:unstructured"
+                                        text="date"
+                                        value="date"/>
                                     <title
-                                    jcr:primaryType="nt:unstructured" text="title" value="text"/>
+                                        jcr:primaryType="nt:unstructured"
+                                        text="title"
+                                        value="text"/>
                                     <Node
-                                    jcr:primaryType="nt:unstructured" text="node" value="cq:created"/>
+                                        jcr:primaryType="nt:unstructured"
+                                        text="node"
+                                        value="cq:created"/>
                                 </items>
                             </orderBy>
-                            <sort jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/select" fieldLabel="sort" name="./sort">
+                            <sort
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                fieldLabel="sort"
+                                name="./sort">
                                 <items jcr:primaryType="nt:unstructured">
-                                    <ascending jcr:primaryType="nt:unstructured" text="ASC" value="ASC"/>
+                                    <ascending
+                                        jcr:primaryType="nt:unstructured"
+                                        text="ASC"
+                                        value="ASC"/>
                                     <descencing
-                                    jcr:primaryType="nt:unstructured" text="DESC" value="DESC"/>
+                                        jcr:primaryType="nt:unstructured"
+                                        text="DESC"
+                                        value="DESC"/>
                                 </items>
                             </sort>
-                            <title jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/textfield" fieldLabel="Title" name="./title"/>
-                            <tags jcr:primaryType="nt:unstructured" sling:resourceType="cq/gui/components/coral/common/form/tagfield" fieldLabel="Tags" multiple="{Boolean}true" name="./tags" rootPath="/content/cq:tags/academy-munyemana-unicredit" fieldDescription="Please add no more than 4 tags" />
-                            <totalArticles jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/numberfield" fieldLabel="Maximum number of articles per tag" name="./maxArticle"/>
-                            <!-- <totalLabel jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/textfield" fieldLabel="Total articles label" name="./totalLabel"/> -->
-                            <closeLabel jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/textfield" fieldLabel="Close label" name="./closeLabel"/>
+                            <title
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Title"
+                                name="./title"/>
+                            <tags
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="cq/gui/components/coral/common/form/tagfield"
+                                fieldDescription="Please add no more than 4 tags"
+                                fieldLabel="Tags"
+                                multiple="{Boolean}true"
+                                name="./tags"
+                                rootPath="/content/cq:tags/academy-munyemana-unicredit"/>
+                            <totalArticles
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                                fieldLabel="Maximum number of articles per tag"
+                                name="./maxArticle"/>
+                            <closeLabel
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Close label"
+                                name="./closeLabel"/>
                         </items>
                     </column>
                 </items>
