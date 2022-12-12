@@ -13,7 +13,7 @@ import com.day.cq.wcm.api.PageManager;
 @Model(adaptables = Resource.class, defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
 public class HeaderNavigation {
 
-  private static final Logger loggingErroor = LoggerFactory.getLogger(HeaderNavigation.class);
+  private static final Logger loggingError = LoggerFactory.getLogger(HeaderNavigation.class);
 
   @SlingObject
   Resource componentResource;
