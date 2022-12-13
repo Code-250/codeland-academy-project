@@ -42,7 +42,7 @@ public class ClassicHeader {
   public List<String> getSecondLevelNav() {
     PageManager manageSecondPage = componentResource.getResourceResolver().adaptTo(PageManager.class);
     Page currentPage = manageSecondPage.getContainingPage(componentResource);
-    Iterator<Page> LevelIterator = currentPage.getAbsoluteParent(4).listChildren();
+    Iterator<Page> LevelIterator = currentPage.getAbsoluteParent(2).listChildren();
     while (LevelIterator.hasNext()) {
       Page page = LevelIterator.next();
       if (page != null) {

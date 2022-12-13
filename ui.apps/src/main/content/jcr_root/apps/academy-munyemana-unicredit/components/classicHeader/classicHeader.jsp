@@ -1,5 +1,6 @@
 <%@page language="java"%>
 <%@page import="it.codeland.academy.core.models.ClassicHeader"%>
+<%@page import="it.codeland.academy.core.models.HeaderNavigation"%>
 <%@page import="com.day.cq.wcm.api.Page"%>
 <%@include file="/libs/foundation/global.jsp"%>
 <cq:include script="/libs/wcm/core/components/init/init.jsp"/>
@@ -57,9 +58,9 @@
                             <a class="second-level__item--title text--paragraph-title">
                                 ${secondLevel}
                             </a>
-                            <%-- <c:forEach var="secondLevelChild" items="${navigation.secondLevelNav}">
+                            <div>
                             <a data-sly-test="${!secondLevel}" class="second-level__item text--body">${secondLevel}</a>
-                            </c:forEach> --%>
+                            </div>
                         </div>
                     </div>
                 </div>

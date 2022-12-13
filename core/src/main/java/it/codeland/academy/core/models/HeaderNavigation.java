@@ -7,6 +7,7 @@ import org.apache.sling.models.annotations.injectorspecific.SlingObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.adobe.cq.sightly.WCMUsePojo;
 import com.day.cq.wcm.api.Page;
 import com.day.cq.wcm.api.PageManager;
 
@@ -30,4 +31,5 @@ public class HeaderNavigation {
     Page currentPage = manageSecondPage.getContainingPage(componentResource);
     return currentPage.getAbsoluteParent(2);
   }
+
 }

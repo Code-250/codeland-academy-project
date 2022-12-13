@@ -6,6 +6,7 @@
     <div class="footer__wrap container">
       <div class="footer__upper">
         <%-- <div data-sly-resource="${'footerfirstlevel' @ resourceType='academy-munyemana-unicredit/components/footer-first-level'}"></div> --%>
+        <cq:include path="footer-first-level" resourceType="academy-munyemana-unicredit/components/classicFooterFirstLevel"/>
         
         <%-- <div data-sly-resource="${'footersecondlevel' @ resourceType='academy-munyemana-unicredit/components/footer-second-level'}"></div> --%>
       </div>
