@@ -16,7 +16,7 @@
     "wdio"
   ],
   "devDependencies": {
-    "@rpii/wdio-html-reporter": "6.3.1",
+    "@rpii/wdio-html-reporter": "7.7.1",
     "@wdio/cli": "^7.34.0",
     "@wdio/junit-reporter": "^7.1.2",
     "@wdio/local-runner": "^7.34.0",
